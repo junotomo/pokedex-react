@@ -1,0 +1,80 @@
+$secondary-color:#ef5350;
+
+.card-container{
+  display: grid;
+  background-color: $secondary-color;
+  grid-template-areas:
+  "img identification"
+  "img traits"
+  "abilities abilities";
+  border-radius: 25px;
+  max-width: 500px;
+}
+
+.pokemon-sprite {
+  grid-area: img;
+  width: 230px;
+  background-color: white;
+  border-radius: 25px 0;
+}
+
+.pokemon-ID {
+  grid-area: identification;
+  background: white;
+  display: flex;
+  height: 50px;
+  border-radius: 0 25px 0 0;
+
+  span {
+    color: black;
+    font-weight: bold;
+
+    margin: auto 10px;
+    &:first-child{
+      font-size: 2em;
+    }
+  }
+}
+
+.title {
+  font-weight: bold;
+  margin-right: 10px;
+}
+
+.pokemon-traits{
+  display: flex;
+
+  .physical{
+    display: grid;
+    padding: 0px 1em;
+  }
+
+  .types{
+    width: 100%;
+    padding: 0 1em;
+    border-left: 1px solid white;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+
+  .type-block{
+    padding: 10px;
+    border-radius: 10px;
+    height: 16px;
+    margin: 0 auto;
+  }
+}
+
+.pokemon-abilities{
+  grid-area: abilities;
+  padding: 1em;
+  display: flex;
+  gap: 10px;
+
+  .ability{
+    padding: 10px;
+    border-radius: 10px;
+    background: gray;
+  }
+}

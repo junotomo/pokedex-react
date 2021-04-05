@@ -1,0 +1,62 @@
+$primary-color: #2c71aa;
+$secondary-color:#ef5350;
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+  background: $primary-color;
+  .pokedex-container {
+    display: flex;
+    width: 100%;
+    flex-flow: column;
+    margin-top: 100px;
+    gap: 2em;
+  }
+
+  .search-pokemon {
+    display: flex;
+    justify-content: center;
+  }
+
+  .select-type{
+    outline: none;
+    border: none;
+    border-right: 0px;
+    border-radius: 15px 0px 0px 15px;
+    padding: 1em;
+    background-color: $secondary-color;
+    font-weight: bold;
+  }
+
+  .input-pokemon {
+    background: white;
+    outline: none;
+    border: none;
+    border-radius: 0 15px 15px 0;
+    padding: 1em;
+    width: 50%;
+  }
+
+  .pokemons-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+
+  .ability-details-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap:10px;
+    background-color: $secondary-color;
+    border-radius: 20px;
+    padding: 1em;
+  }
+  .ability-details{
+
+    span:first-child {
+      font-weight: bold;
+      margin-right: 10px;
+    }
+  }
+}
